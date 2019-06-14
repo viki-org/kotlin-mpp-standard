@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A4EBA5B294F636CE5F7C00D /* AppDelegate.swift in Resources */ = {isa = PBXBuildFile; fileRef = B4A176361DFFFED50034B50A /* AppDelegate.swift */; };
 		63D853D62163879F00D87386 /* MyLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D853D52163879F00D87386 /* MyLibrary.framework */; };
 		B4A176441DFFFED50034B50A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A176361DFFFED50034B50A /* AppDelegate.swift */; };
 		B4A176481DFFFED50034B50A /* AppIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A1763C1DFFFED50034B50A /* AppIcons.xcassets */; };
@@ -153,7 +152,7 @@
 			};
 			buildConfigurationList = B4A176151DFFFAB40034B50A /* Build configuration list for PBXProject "Kotlin Sample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -178,7 +177,6 @@
 				B4A176481DFFFED50034B50A /* AppIcons.xcassets in Resources */,
 				B4A1764E1E0000580034B50A /* Images.xcassets in Resources */,
 				BFCDB87820724B4000861B6E /* Main.storyboard in Resources */,
-				1A4EBA5B294F636CE5F7C00D /* AppDelegate.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/../..\"; sh -c \". ./gradlew :library:mylibrary-ios:lipo\" && sh -c \"cp -r library/ios/build/konan/bin/ios_universal/MyLibrary.framework samples/ios-app/Kotlin\\ Sample-iOS/General/\"\n";
+			shellScript = "export ANDROID_HOME=$HOME/Library/Android/sdk/\ncd \"$SRCROOT/../..\"; sh -c \". ./gradlew :library:mylibrary-ios:lipo\" && sh -c \"cp -r library/ios/build/konan/bin/ios_universal/MyLibrary.framework samples/ios-app/Kotlin\\ Sample-iOS/General/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -391,7 +389,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG Debug";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -423,7 +421,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = Release;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -510,7 +508,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = Beta;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Beta;
 		};
