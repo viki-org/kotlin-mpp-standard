@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
                        'Vincent de Smet' => 'vincent.desmet@novemberfive.co'
   }
   spec.summary      = "A Hello World library writting in Kotlin for both Android & iOS."
-  spec.source       = { :git => 'https://github.com/novemberfiveco/kotlin-mpp-standard.git', :tag => 'master' }
+  spec.source       = { :git => 'https://github.com/novemberfiveco/kotlin-mpp-standard.git', :tag => s.version.to_s }
   spec.platform     = :ios, "9.0"
   spec.vendored_frameworks    = 'outputs/MyLibrary.framework'
 end
